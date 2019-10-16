@@ -16,19 +16,35 @@ class Reverse {
      * @return
      */
     public int reverse(int x) {
-        if (x > Integer.MAX_VALUE) {
+        if (x > Integer.MAX_VALUE || x < Integer.MIN_VALUE) {
             return 0;
         }
-        String s = String.valueOf(x);
+        if (x == -2147483648) {
+            return 0;
+        }
+        boolean isFu = false;
+        if (x < 0) {
+            isFu = true;
+        }
+        String s = String.valueOf(Math.abs(x));
         char[] chars = s.toCharArray();
         String newString = "";
         for (int i = chars.length - 1; i >= 0; i--) {
             newString += chars[i];
         }
-        //System.out.println("转换成字符数组后："+Arrays.toString(chars));
-        int result = Integer.valueOf(newString);
-
-        return result;
+        long result = Long.valueOf(newString);
+        if (isFu) {
+            result = (-1) * result;
+            if (result < Integer.MIN_VALUE) {
+                return 0;
+            }
+            return (int) result;
+        } else {
+            if (result > Integer.MAX_VALUE) {
+                return 0;
+            }
+            return (int) result;
+        }
     }
 
     public static void main(String[] args) {
