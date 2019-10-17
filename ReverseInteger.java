@@ -3,15 +3,12 @@ import java.util.Scanner;
 class Reverse {
     /**
      * 给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。
-     * 输入: 123
-     * 输出: 321
-     * <p>
-     * 输入: -123
-     * 输出: -321
-     * <p>
-     * 输入: 120
-     * 输出: 21
-     *
+     * 思路：
+     * 首先判定输入 x 的大小，若超过 Integer 的范围则 return 0; 
+     * 注意负数的转换：先求出绝对值，逆置后再乘 （-1）;
+     * 然后将输入的 int 型转换成 String 型后拆分成字符数组，再进行逆置，用 long 型的 result 进行保存，
+     * 防止转换后的数值大于 Integer.MAX_VALUE ,并进行判断，若 result 大于 Integer.MAX_VALUE 则 return 0;
+     * 否则将 long 型的 result 强制转换回 int 型并输出。
      * @param x
      * @return
      */
