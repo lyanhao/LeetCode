@@ -8,6 +8,9 @@ public class TwoSum {
      * 给定一个整数数组 nums 和一个目标值 target
      * 请你在该数组中找出和为目标值的那 两个 整数
      * 并返回他们的数组下标。
+     * 思路：
+     * 双层循环：很简单没什么好说的。
+     * 利用哈希表：定义 temp 为目标值与数组元素 nums[i] 的差值，在哈希表中找 temp 即可。
      * @param nums
      * @param target
      * @return
