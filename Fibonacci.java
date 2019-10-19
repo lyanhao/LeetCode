@@ -45,5 +45,4 @@ public class Fibonacci {
         int n = sc.nextInt();
         minNum(n);
     }
-
 }
