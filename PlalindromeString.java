@@ -35,3 +35,4 @@ public class PlalindromeString {
         scanner.close();
     }
 }
+
