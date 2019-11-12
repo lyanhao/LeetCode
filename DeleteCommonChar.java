@@ -24,3 +24,4 @@ public class DeleteCommonChar {
         System.out.println(d.solution(s1, s2));
     }
 }
+
