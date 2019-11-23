@@ -3,6 +3,14 @@ package day1122;
 import java.util.Scanner;
 
 public class UnusualAdd {
+    /**
+     * 请编写一个函数，将两个数字相加。不得使用+或其他算数运算符。
+     * 给定两个int A和B。请返回A＋B的值
+     *
+     * @param A 加数
+     * @param B 加数
+     * @return 两数之和
+     */
     public int addAB(int A, int B) {
         if (A == 0) {
             return B;
