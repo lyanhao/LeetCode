@@ -16,7 +16,6 @@ public class Main{
         }
         in.close();
         System.out.printf("%.2f",gradePointAverage(gradePoint,coursePoint));//格式输出
-         
     }
     public static double pointOfEachCourse(int grade){//根据实际成绩判断学分方法
         double point = 0.0;
