@@ -1,5 +1,3 @@
-package day1120;
-
 import java.math.BigInteger;
 import java.util.Scanner;
 
