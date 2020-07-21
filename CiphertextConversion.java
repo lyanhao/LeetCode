@@ -11,7 +11,6 @@ import java.util.Scanner;
  * 对应每一组数据，输出解密后的明文。
  */
 public class CiphertextConversion {
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         while (sc.hasNext()) {
